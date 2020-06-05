@@ -34,7 +34,7 @@ for k, v in d.items():
     json.append({"year": k, "movies": v})
 
 client = pymongo.MongoClient(
-    "mongodb+srv://th:th@cluster0-mselt.mongodb.net/db?retryWrites=true&w=majority")
+    "")
 db = client["db"]
 col = db["movies"]
 col.drop()
